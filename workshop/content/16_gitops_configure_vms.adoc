@@ -1,0 +1,7 @@
+:scrollbar:
+:toc2:
+
+=  OpenShift GitOps - Setup
+
+== Introduction
+
