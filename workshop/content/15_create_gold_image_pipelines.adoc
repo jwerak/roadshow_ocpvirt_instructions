@@ -9,6 +9,8 @@
 This lab will introduce you to the basics of creating custom golden image with virt-customize and creation of VMs from the customized golden image in OpenShift Virtualization and OpenShift Pipelines. For more informations about advanced topics how OpenShift Virtualization in combination with Openshift Pipelines can be used, can be found in these blog posts https://www.redhat.com/en/blog/building-vm-images-using-tekton-and-secrets[Building VM images using Tekton and Secrets
 ] or https://www.redhat.com/en/blog/creating-a-golden-image-for-windows-vms-in-openshift-virtualization[Creating a Golden Image for Windows VMs in OpenShift Virtualization].
 
+The prerequisite for this Exercise is completion of the lab:./13_gitops_setup.adoc[GitOps Setup Exercise].
+
 .Goals
 * Copy RHEL9 image to new DataVolume
 * Modifies it with virt-customize
@@ -54,7 +56,7 @@ spec:
     namespace: openshift-virtualization-os-images
 ----
 +
-waitForSuccess: 
+waitForSuccess:
 +
 ----
 true
@@ -99,7 +101,7 @@ image::images/virtualization_pipelines/25_create_ds.png[]
 
 . Update parameters for modify-data-object task with these values:
 +
-Display Name: 
+Display Name:
 +
 ----
 create-datasource
@@ -125,7 +127,7 @@ namespace:
 pipelines
 ----
 +
-waitForSuccess: 
+waitForSuccess:
 +
 ----
 true
@@ -173,9 +175,9 @@ startVM:
 true
 ----
 +
-CLOUD_USER_PASSWORD changes password for cloud-user user, 
+CLOUD_USER_PASSWORD changes password for cloud-user user,
 +
-DATA_SOURCE_NAME changes the name of Datasource which VM will use, to Datasource which is created in task create-datasource. 
+DATA_SOURCE_NAME changes the name of Datasource which VM will use, to Datasource which is created in task create-datasource.
 +
 DATA_SOURCE_NAMESPACE changes the namespace of Datasource which VM will use, to Datasource which is created in task create-datasource.
 +
