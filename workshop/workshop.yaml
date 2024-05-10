@@ -14,4 +14,7 @@ modules:
         - 10_backup_restore
         - 11_metallb
         - 12_service_route
-        - 15_gitops_setup
+        - 13_gitops_setup
+        - 14_create_vm_pipelines
+        - 15_create_gold_image_pipelines
+        - 16_gitops_configure_vms

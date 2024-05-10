@@ -35,5 +35,11 @@ modules:
         name: "Optional: Exposing apps using MetalLB"
     12_service_route:
         name: "Optional: Exposing apps using a Route"
-    15_gitops_setup:
+    13_gitops_setup:
         name: "Optional: Add cluster features using GitOps"
+    14_create_vm_pipelines:
+        name: "Optional: Creating Virtual Machines using OpenShift Pipelines"
+    15_create_gold_image_pipelines:
+        name: "Optional: Create golden VM image using OpenShift Pipelines"
+    16_gitops_configure_vms:
+        name: "Optional: Creating Virtual Machines using GitOps approach"

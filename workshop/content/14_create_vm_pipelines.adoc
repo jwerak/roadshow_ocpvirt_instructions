@@ -8,6 +8,8 @@
 
 This lab will introduce you to the basics of creating VMs in OpenShift Virtualization and OpenShift Pipelines. OpenShift Virtualization in combination with OpenShift Pipelines can give you opportunity to automate advanced flows with Virtual Machines.
 
+The prerequisite for this Exercise is completion of the lab:./13_gitops_setup.adoc[GitOps Setup Exercise].
+
 .Goals
 * Create a new virtual machine with OpenShift Pipelines
 
@@ -54,7 +56,7 @@ vmNamespace:
 pipelines
 ----
 +
-startVM: 
+startVM:
 +
 ----
 true
