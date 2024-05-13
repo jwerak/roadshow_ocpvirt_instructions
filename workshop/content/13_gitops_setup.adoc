@@ -7,7 +7,7 @@
 
 Red Hat OpenShift GitOps is a declarative way to implement continuous deployment for cloud native applications. Red Hat OpenShift GitOps ensures consistency in applications when you deploy them to different clusters in different environments, such as: development, staging, and production. Red Hat OpenShift GitOps helps you automate the following tasks:
 
-- Ensure that the clusters have similar states for configuration, monitoring, and storage
+- Ensure that the clusters have identical state for configuration, monitoring, and storage
 - Recover or recreate clusters from a known state
 - Apply or revert configuration changes to multiple OpenShift Container Platform clusters
 - Associate templated configuration with different environments
@@ -34,10 +34,6 @@ image::images/GitOps/02_GitOps_operator_install.png[]
 Click *View Operator* after it is successfully created.
 
 image::images/GitOps/03_view_operator.png[]
-
-Create ArgoCD instance by clicking *+Create instance* in ArgoCD CRD:
-
-image::images/GitOps/04_create_argoCD.png[]
 
 [NOTE]
 As part of setup necessary privileges must be provided to the GitOps instance. Depending on the scope of the GitOps. To simplify this step cluster-admin privileges were granted to GitOps instance using command `oc adm policy add-cluster-role-to-user cluster-admin system:serviceaccount:openshift-gitops:openshift-gitops-argocd-application-controller`
