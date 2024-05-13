@@ -47,7 +47,7 @@ Also feel free to explore the application manifests are located in this link:htt
 
 Shortly your environment should contain:
 
-- Project `gitopsexamples`
+- New Project `gitopsexamples`
 - NetworkAttachDefinition `appnad`
 - Secret `fedora03-ssh-key` containing ssh public key
 - Running VM using above resources.

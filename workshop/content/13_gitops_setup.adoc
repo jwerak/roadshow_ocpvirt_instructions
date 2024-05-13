@@ -104,4 +104,4 @@ syncPolicy:
     - ServerSideApply=true
 ----
 
-Your cluster is now ready for link:./14_create_vm_pipelines.adoc[next exercise] where you will learn how to automate VM tasks using OpenShift Pipelines.
+Your cluster is now ready for next exercise where you will learn how to automate VM tasks using OpenShift Pipelines.
