@@ -104,4 +104,10 @@ syncPolicy:
     - ServerSideApply=true
 ----
 
+image::images/GitOps/kubevirt_tasks_01.jpg[]
+
+image::images/GitOps/kubevirt_tasks_02.jpg[]
+
+image::images/GitOps/kubevirt_tasks_03.jpg[]
+
 Your cluster is now ready for next exercise where you will learn how to automate VM tasks using OpenShift Pipelines.
